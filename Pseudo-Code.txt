@@ -49,3 +49,15 @@ ans[5] = nums[nums[5]]
 returns --> nums[4] --> 3
 
 Output: ans[] = [4, 5, 0, 1, 2, 3]
+------------------------ END.
+
+Concatenation of Array
+----------------------
+
+nums --> array of length --> n
+
+Output array ans --> of length --> 2n
+
+Range i = 0 to i < n 
+
+ans[i] == nums[i] and ans[i + n] == nums[i]
