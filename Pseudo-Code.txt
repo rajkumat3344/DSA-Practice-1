@@ -1,0 +1,51 @@
+Build Array from Permutation
+----------------------------
+
+1.nums[] length is equal to ans[].
+
+2. ans[i] = nums[nums[i]]
+
+Range - array is zero based indexed
+0 <= nums.size() - 1
+
+constraints:
+1 <= nums.size() <= 1000
+
+Input: nums = [0,2,1,5,3,4]
+Output: ans = [0,1,2,4,5,3]
+
+i = 0 to i = nums.size()
+
+ans[0] = nums[nums[0]]
+returns --> nums[0] --> 0
+ans[1] = nums[nums[1]]
+returns --> nums[2] --> 1
+ans[2] = nums[nums[2]]
+returns --> nums[1] --> 2
+ans[3] = nums[nums[3]]
+returns --> nums[5] --> 4
+ans[4] = nums[nums[4]]
+returns --> nums[3] --> 5
+ans[5] = nums[nums[5]]
+returns --> nums[4] --> 3
+
+ans[] = [0, 1, 2, 4, 5, 3]
+
+Re-run for Input: [5,0,1,2,3,4]
+
+i = 0 to i = nums.size()
+
+ans[0] = nums[nums[0]]
+returns --> nums[5] --> 4
+ans[1] = nums[nums[1]]
+returns --> nums[0] --> 5
+ans[2] = nums[nums[2]]
+returns --> nums[1] --> 0
+ans[3] = nums[nums[3]]
+returns --> nums[2] --> 1
+ans[4] = nums[nums[4]]
+returns --> nums[3] --> 2
+ans[5] = nums[nums[5]]
+returns --> nums[4] --> 3
+
+Output: ans[] = [4, 5, 0, 1, 2, 3]
