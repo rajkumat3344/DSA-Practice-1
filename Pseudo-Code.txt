@@ -60,4 +60,17 @@ Output array ans --> of length --> 2n
 
 Range i = 0 to i < n 
 
-ans[i] == nums[i] and ans[i + n] == nums[i]
+ans[i] == nums[i]
+ans[i + n] == nums[i]
+
+for i to nums.size/n
+
+0 1 2 -- n
+0 1 2 -- n
+----------
+0 1 2 0 1 2 --2n
+
+vector<int> ans(2*n); --> Output
+-------------------------------- END.
+
+
