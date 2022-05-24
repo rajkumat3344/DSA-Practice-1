@@ -185,6 +185,16 @@ if(MaxWealth < individualAmount){
 
 
 return Max-> ans-> 17;
+-----------------------END.
 
+Final Value of Variable After Performing Operations
+----------------------------------------------------
+++X --> +1
+X++ --> +1
 
+--X --> -1
+X-- --> -1
 
+int final = 0
+
+for i to i < operations.size()
