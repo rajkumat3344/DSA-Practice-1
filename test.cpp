@@ -1,34 +1,33 @@
 #include <iostream>
-#include <vector>
+#include <set>
 using namespace std;
 
 int main(){
-    int arr[] = {1, -1, 3, 2, -7, -5, 11, 6};
-    int n = sizeof(arr)/sizeof(int);
+
+    int a[] = {85, 25, 1, 32, 54, 6};
+    int n = sizeof(a)/sizeof(int);
+
+    int b[] = {85, 2};
+    int m = sizeof(b)/sizeof(int);
 
      // Your code goes here
-       int requestedArray[8] = {0};
-       int ni = sizeof(arr)/sizeof(int);
-       int j = 0;
+       set<int> ans;
+       int count = 0;
 
        //Positive Elements
        for(int i=0; i<n ; i++){
-           if(arr[i] >= 0){
-               requestedArray[j++] = arr[i];
-           }
+          ans.insert(a[i]);
        }
 
        //Negative Elements
-       for(int i=0; i<n ; i++){
-           if(arr[i] < 0){
-               requestedArray[j++] = arr[i];
-           }
+       for(int i=0; i<m ; i++){
+          ans.insert(b[i]);
        }
 
-       for(int i=0 ; i<ni ; i++){
-           arr[i]=requestedArray[i];
-           cout << arr[i] << " ";
+       for(int i=0 ; i<ans.size() ; i++){
+          count++;
        }
 
+       cout << count;
     return 0;
 }
